@@ -1,60 +1,74 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
 const Header = () => {
-  return(
-  <div className="header">
-    <div className="logo-container">
-      <img
-        className="logo"
-        src="https://dynamic.brandcrowd.com/asset/logo/7f982a19-779d-4dd3-b533-7a9f66474000/logo-search-grid-1x?logoTemplateVersion=1&v=637810055012670000"
-        alt=""
-      />
-    </div>
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://dynamic.brandcrowd.com/asset/logo/7f982a19-779d-4dd3-b533-7a9f66474000/logo-search-grid-1x?logoTemplateVersion=1&v=637810055012670000"
+          alt=""
+        />
+      </div>
 
-    <div className="nav-items">
-      <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Contact Us</li>
-        <li>Cart</li>
-      </ul>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
     </div>
-  </div>
   );
 };
 
 const RestaurantCard = () => {
-  return(
-    <div className="res-card">
-      <img className="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/405645b3118d83e89db4c65361e43733" alt="" />
-      <h3>Uday Foods</h3>
+  return (
+    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+      <img
+        className="res-logo"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/405645b3118d83e89db4c65361e43733"
+        alt=""
+      />
+      <h3>Udayy Foods</h3>
       <h4>Biryani, North India, Asian</h4>
+      <h4>4.4 stars</h4>
+      <h4>38 minutes</h4>
     </div>
-  )
-}
+  );
+};
 
 const Body = () => {
-  return(
-    <div className="bod">
+  return (
+    <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        
         <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+
       </div>
     </div>
-  )
-}
+  );
+};
 
-const AppLayout = () =>{
+const AppLayout = () => {
   return (
     <div className="app">
-      <Header/>
+      <Header />
       <Body />
     </div>
-  )
-}
+  );
+};
 // create root using createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // passing react element inside root
