@@ -3,10 +3,13 @@
   justify-content: space-between;
   border: 1px solid black;
 }
-.logo {
-  width: 200px;
+.restaurent-logo {
+  width: 20px;
 }
+.top-logo {
+    width: 200px;
 
+}
 .nav-items > ul {
   font-size: 24px;
   display: flex;
@@ -19,18 +22,18 @@
 }
 
 
-.res-container {
+.restaurent-container {
     display: flex;
     flex-wrap: wrap;
 }
-.res-card {
+.restaurent-card {
    margin: 5px;
   padding: 5px;
   width: 200px;
  
 }
 
-.res-card:hover {
+.restaurent-card:hover {
     border: 1px solid black;
     cursor: pointer;
 
@@ -39,6 +42,6 @@
 .search {
   padding: 10px;
 }
-.res-logo {
+.restaurent-logo {
   width: 100%;
 }
